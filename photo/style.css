@@ -211,7 +211,7 @@ html, body {
     }
 
     .menu {
-        padding-top: 100px;
+        padding-top: 50%;
         display: block;
         position: fixed;
         top: -100%;
@@ -243,6 +243,7 @@ html, body {
 
     .menu__item a {
         color: black;
+        font-size: 20px;
     }
 
     /* Инфо */
@@ -256,7 +257,7 @@ html, body {
 
 /* Инфо */
 .info_wrap {
-    padding-top: 128px;
+    padding-top: 130px;
     padding-bottom: 105px;
 }
 
@@ -373,7 +374,8 @@ html, body {
 
 @media (max-width:768px) {
     .skills_wrap {
-        height: 1500px;
+        height: 100%;
+        padding-top: 70px;
     }
 
     .skills__programs {
@@ -384,6 +386,11 @@ html, body {
     }
 
     .skills__item {
+        padding-bottom: 100px;
+    }
+
+    .skills__subtitle {
+        padding-top: 70px;
         padding-bottom: 70px;
     }
 }
