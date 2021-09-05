@@ -1,0 +1,389 @@
+@import url('http://fonts.cdnfonts.com/css/gilroy-bold');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    border: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+img {
+    display: block;
+}
+
+html, body {
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 944px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+/* menu */
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    height: 88px;
+}
+
+.header:before {
+    content: '';
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+    top: 0;
+    left: 0;
+}
+
+.header__body {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.menu {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+}
+
+.menu__item a{
+    font-family: "Gilroy-Bold";
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0em;
+    color: #828282;
+    position: relative;
+    z-index: 3;
+}
+
+.menu__item a:hover {
+    transition: .2s;
+    color: black;
+}
+
+.menu__burger {
+    display: none;
+}
+
+.header__logo {
+    display: none;
+}
+
+
+.header__logo h2 {
+    font-family: "Gilroy-Bold";
+    font-size: 35px;
+    /* letter-spacing: 0em; */
+    color: black;
+    font-weight: 400;
+}
+
+.logo {
+    font-family: "Gilroy-Bold";
+    font-size: 35px;
+    color: black;
+    font-weight: 400;
+}
+
+.head__line {
+    width: 100%;
+    height: 1px;
+    background: #828282;
+}
+
+@media (max-width:1200px) {
+    .container {
+        max-width: 800px;
+    }
+}
+
+@media (max-width:800px) {
+    .container {
+        max-width: 500px;
+    }
+}
+
+@media (max-width:500px) {
+    .container {
+        max-width: none;
+    }
+}
+
+@media (max-width:768px) {
+    .container {
+        max-width: none;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    body.lock {
+        overflow: hidden;
+    }
+
+    header.header:before {
+        height: 120px;
+    }
+
+    .header__body {
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 50px;
+    }
+
+    .header__logo {
+        display: block;
+        position: relative;
+        z-index: 3;
+    }
+
+    .menu__burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+    }
+
+    .menu__burger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        z-index: 3;
+    }
+
+    .menu__burger.active {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20px;
+    }
+
+    .menu__burger span{
+        display: block;
+        background: black;
+        width: 100%;
+        height: 2px;
+        transition: 0.5s;
+    }  
+
+    .menu__burger.active #_1{
+        display: block;
+        transition: 0.5s;
+        transform: rotate(45deg);
+        position: absolute;
+    }
+    .menu__burger.active #_3{
+        display: block;
+        transform: rotate(-45deg);
+        position: absolute;
+    }
+    .menu__burger.active #_2{
+        display: none;
+    }
+
+    .menu {
+        padding-top: 100px;
+        display: block;
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: white;
+        transition: 0.7s;
+        overflow: auto;
+    }
+
+    .menu:before {
+        display: none;
+    }
+
+    .menu.active {
+        transition: 0.7s;
+        top: 0;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu__item {
+        margin-top: 20px;
+    }
+
+    .menu__item a {
+        color: black;
+    }
+
+    /* Инфо */
+    .info__logo {
+        display: none;
+    }
+
+    /* About me */
+}
+
+
+/* Инфо */
+.info_wrap {
+    padding-top: 128px;
+    padding-bottom: 105px;
+}
+
+.info__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.info__text {
+    font-family: "Gilroy-Medium";
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0em;
+}
+
+.info__leng {
+    font-family: Gilroy-Bold;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #828282;
+}
+
+.info__leng span {
+    color: black;
+}
+
+.info__img img {
+    width: 100%;
+    height: auto;
+}
+
+/* about */
+.about__wrap {
+    background: #F6F6F6;
+}
+
+.about__text {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title {
+    font-weight: 400;
+    text-align: center;
+    font-family: "Gilroy-Bold";
+    font-size: 34px;
+    line-height: 42px;
+    letter-spacing: 0em;
+}
+
+.subtitle {
+    text-align: center;
+    font-family: "Gilroy-Medium";
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0em;
+    font-weight: 400;
+}
+
+.about__subtitle p {
+    margin-top: 20px
+}
+
+
+/* Skills */
+.skills_wrap {
+    height: 610px;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.skills__programs {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.skills__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills__item_stars {
+    display: flex;
+    justify-content: space-between;
+    width: 166px;
+}
+
+.skills__item_name {
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.skills__item_name p {
+    text-align: center;
+    font-family: Gilroy-Bold;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0em;
+    color: #828282;
+}
+
+@media (max-width:768px) {
+    .skills_wrap {
+        height: 1500px;
+    }
+
+    .skills__programs {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills__item {
+        padding-bottom: 70px;
+    }
+}
