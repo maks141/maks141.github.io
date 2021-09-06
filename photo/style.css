@@ -1,5 +1,11 @@
-@import url('http://fonts.cdnfonts.com/css/gilroy-bold');
-
+@font-face {
+    font-family: "Gilroy-Bold";
+    src: url(fonts/Gilroy-Bold.ttf);
+}
+@font-face {
+    font-family: "Gilroy-Medium";
+    src: url(fonts/Gilroy-Medium.ttf);
+}
 * {
     padding: 0;
     margin: 0;
@@ -8,21 +14,17 @@
     box-sizing: border-box;
     list-style-type: none;
 }
-
 img {
     display: block;
 }
-
 html, body {
     height: 100%;
 }
-
 .wrapper {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
-
 .container {
     max-width: 944px;
     margin: 0 auto;
@@ -30,7 +32,6 @@ html, body {
 }
 
 /* menu */
-
 .header {
     position: fixed;
     width: 100%;
@@ -211,7 +212,7 @@ html, body {
     }
 
     .menu {
-        padding-top: 50%;
+        padding-top: 60%;
         display: block;
         position: fixed;
         top: -100%;
@@ -460,4 +461,37 @@ html, body {
     line-height: 22px;
     letter-spacing: 0em;
     font-weight: 400;
+    transition: .3s;
+}
+
+.contacts__btn:hover {
+    transition: .3s;
+    background-color: #c5c5c5;
+    color: black;
+}
+
+.contacts__icons {
+    padding-top: 86px;
+    width: 342px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts__text {
+    padding-top: 45px;
+}
+
+.contacts__text p {
+    color: #828282;
+    font-family: "Gilroy-Medium";
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+@media (max-width:768px) {
+    .contacts__icons {
+       width: 100%;
+    }
 }
