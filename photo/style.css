@@ -394,3 +394,70 @@ html, body {
         padding-bottom: 70px;
     }
 }
+
+/* Portfolio */
+.portfolio_wrap {
+    padding-top: 60px;
+    background: #F6F6F6;
+}
+
+.portfolio__title {
+    padding-bottom: 50px;
+}
+
+.portfolio__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.portfolio__subtitle {
+    margin-top: 44px;
+}
+
+.portfolio__subtitle a {
+    font-family: "Gilroy-Medium";
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0em;
+    color: #070707;
+    text-decoration-line: underline;
+}
+
+.portfolio__img img {
+    width: 100%;
+    height: auto;
+}
+
+/* Contacts */
+.contacts_wrap {
+    padding-top: 60px;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacts__subtitle {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.contacts__btn {
+    border-radius: 20px;
+    color: white;
+    height: 42px;
+    width: 180px;
+    background-color: #070707;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Gilroy-Bold;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0em;
+    font-weight: 400;
+}
