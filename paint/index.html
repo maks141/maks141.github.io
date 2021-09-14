@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header class="header_wrap">
+        <div class="container">
+            <div class="header">
+                <div class="header__btns">
+                    <div class="save_btn btn">Сохранить</div>
+                    <div class="clear_btn btn">Очистить</div>
+                </div>
+                <div class="selecters">
+                    <div class="selecters__width">
+                        <span>Толщина линии: </span><input type="text" value="5" id="input_width">
+                        <div class="selecters__submit btn">Применить</div>
+                    </div>
+                    <div class="selecters__colors"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <canvas id='canvas' crossorigin="anonymous">Браузер не поддерживает Canvas</canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
